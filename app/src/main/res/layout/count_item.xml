@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/send_count_minus"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center"
+        android:text="—"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:id="@+id/send_count_number"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_30"
+        android:layout_toRightOf="@id/send_count_minus"
+        android:background="#ededed"
+        android:gravity="center"
+        android:text="15"
+        android:textColor="#666666" />
+
+    <TextView
+        android:id="@+id/send_count_plus"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_toRightOf="@id/send_count_number"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_20" />
+</RelativeLayout>

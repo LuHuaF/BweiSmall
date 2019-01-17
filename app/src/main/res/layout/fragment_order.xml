@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_24"
+    >
+
+    <RadioGroup
+        android:id="@+id/ListRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sousuo_shap"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_20">
+
+        <RadioButton
+            android:id="@+id/dingdan"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@mipmap/ss22"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="全部订单" />
+
+        <RadioButton
+            android:id="@+id/fukuan"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/pay"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="待付款" />
+
+        <RadioButton
+            android:id="@+id/shouhuo"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/song"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="待收货" />
+
+        <RadioButton
+            android:id="@+id/pingjia"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/pingjia"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="待评价" />
+
+        <RadioButton
+            android:id="@+id/finsh"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/finsh"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:text="已完成" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:padding="@dimen/dp_10"
+        android:id="@+id/framlayout"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/sousuo_shap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ListRg" >
+
+    </FrameLayout>
+</RelativeLayout>

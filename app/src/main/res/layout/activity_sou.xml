@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/tan"
+            android:layout_width="24dp"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@mipmap/dingbu" />
+
+        <EditText
+            android:id="@+id/Edit_Sou"
+            android:layout_width="@dimen/dp_230"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@drawable/sousuo_shap"
+            android:drawablePadding="15dp"
+            android:hint="请输入你要搜索的商品"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20" />
+
+        <ImageButton
+            android:id="@+id/sou"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:src="@mipmap/ss" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/bitmap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="热销新品"
+            android:textColor="#ea952d"
+            android:textStyle="bold" />
+    </RelativeLayout>
+<com.jcodecraeer.xrecyclerview.XRecyclerView
+    android:id="@+id/xrecy"
+    android:layout_below="@+id/ren"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</RelativeLayout>

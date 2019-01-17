@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5">
+
+            <CheckBox
+                android:id="@+id/item_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_5"
+                android:focusable="false" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_toRightOf="@id/item_check"
+                android:background="@drawable/sousuo_shap"
+                android:layout_marginRight="@dimen/dp_7"
+                android:padding="@dimen/dp_8">
+
+                <ImageView
+                    android:id="@+id/item_image"
+                    android:layout_width="@dimen/dp_85"
+                    android:layout_height="@dimen/dp_98"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/item_image"
+                    android:text="sfdsfsdfsfdsfsfsdf"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/item_image"
+                    android:text="sdfsd"
+                    android:textColor="#ff0606"
+                    android:textSize="@dimen/sp_14" />
+
+                <com.umeng.soexample.bweismall.weight.CountView
+                    android:id="@+id/item_count"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"></com.umeng.soexample.bweismall.weight.CountView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/item_delete"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_97"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="#ff5e70"
+        android:text="删除" />
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

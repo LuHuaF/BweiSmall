@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:text="我的资料"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#666666"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/info"
+        android:background="@drawable/sousuo_shap"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="@dimen/dp_312"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="@dimen/dp_138">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_30">
+            <TextView
+                android:id="@+id/txt_my_ziliao_tx"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#666666"
+                android:text="我的头像"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/my_ziliao_tx"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/touxiang1"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30" />
+        </RelativeLayout>
+        <View
+            android:background="#f2f2f2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_1"/>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_30">
+            <TextView
+                android:id="@+id/txt_my_ziliao_nc"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#666666"
+                android:text="我的昵称"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/my_ziliao_name"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#999999"
+                android:background="@null"
+                android:gravity="center"
+                android:text="我是吃不胖的小姐姐"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#f2f2f2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_1"/>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_30">
+            <TextView
+                android:id="@+id/txt_my_ziliao_pwd"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#666666"
+                android:text="我的密码"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/my_ziliao_pwd"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#999999"
+                android:gravity="center"
+                android:text="123456"
+                android:background="@null"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="#f2f2f2"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/dp_272"
+            android:layout_height="@dimen/dp_1"/>
+
+
+    </LinearLayout>
+</LinearLayout>
